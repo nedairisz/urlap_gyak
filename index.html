@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Autók</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Autó adatai</legend>
+
+            <label for="k_marka" class="bal">Kedvenc márka: </label>
+            <input type="text" class="jobb" id="k_marka" name="marka" value="Honda"><br>
+        
+            <label for="tipus" class="bal">Tipus: </label>
+            <input type="text" class="jobb" id="tipus" name="tipus" value="Civik"><br>
+            
+            <label for="evjarat" class="bal">Évjárat: </label>
+            <input type="range" class="jobb" id="evjarat" name="evjarat" min="1804" max="2024"
+                oninput="this.form.evjarat_szam.value = this.value">
+            <input type="number" class="jobb" name="evjarat_szam" min="1804" max="2024" 
+                oninput="this.form.evjarat.value = this.value"><br>
+
+            <div class="gomb"><input type="submit" value="Küldés"></div>
+        </fieldset>
+    </form>
+</body>
+</html>
