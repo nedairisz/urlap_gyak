@@ -13,7 +13,7 @@ input[type=submit] {
     cursor: pointer;
 }
 input[type=text]:focus{
-    background-color: aquamarine;
+    background-color: rgb(201, 214, 11);
 }
 input{
     margin: 5px;
@@ -23,19 +23,23 @@ label{
 }
 .gomb{
     text-align: center;
+    grid-column: span 2;
 }
 form{
     width: 50%;
     margin: auto;
+}
+fieldset{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "j b"
-    ;
+    gap: 10px;
 }
 .jobb{
-    grid-area: j;
+    text-align: right;
 }
 .bal{
-    grid-area: b;
+    text-align: left;
+}
+h1{
+    text-align: center;
 }
